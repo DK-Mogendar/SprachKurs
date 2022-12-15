@@ -70,12 +70,12 @@ function validateOrt() {                                //funktion mit der Klass
     }
 }
 
-function validatePlz() {                                //funktion mit der Klasse validateOrtdefiert:
-    let inputElement = document.getElementById("ort");  //Das Inputelement=document.mit der element ID = plz
+function validatePostleizahl() {                                //funktion mit der Klasse validateOrtdefiert:
+    let inputElement = document.getElementById("plz");  //Das Inputelement=document.mit der element ID = plz
     let value = inputElement.value;                     //Das value = dem Inputelement namens value
     if (!value) {                                       //wenn kein value
                                                         // Bsp. '', null, undefined
-        setMessage5('Bitte die Postleizeahl eingeben.');  //dann gieb text aus
+        setMessage5('Bitte die Postleizeahl eingeben.');//dann gieb text aus
         return false;                                   //es ist falsch
     }
     else {                                               //oder es ist Richtig
@@ -107,7 +107,7 @@ function validateMail() {
 }
 
 function validateAlter() {                               //funktion mit der Klasse validateAlter defiert:
-    let inputElement = document.getElementById("age");;  //Das Inputelement=document.mit der element ID = age
+    let inputElement = document.getElementById("alter");;  //Das Inputelement=document.mit der element ID = age
     let value = inputElement.value;                      //Das value = dem Inputelement namens value
 
     if (!value) {                                        //wenn kein value
