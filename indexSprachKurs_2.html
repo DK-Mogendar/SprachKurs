@@ -14,6 +14,43 @@
         <script src="/assets/css/sprachKurs.css"></script>
 </head>
 <body>
-    
+    <h1 id="app">Bitte trage deine vollständigen Angaben ein!</h1>
+
+    <div class="alert alert-success" role="alert">
+           
+
+        <form onsubmit="return validateForm();">
+            <label for="fname">Vorname:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+
+            <label for="lname">Nachnamename:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+            <label for="lname">Strasse:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br><br>
+
+
+          
+
+            <label for="plz">Postleizahl:</label><br>
+            <input type="number" id="plz" name="plz" value=""><br><br>
+
+            <label for="alter">Alter:</label><br>
+            <input type="number" id="alter" name="alter" value=""><br><br>
+
+         
+            <!-- <input type="submit" value="Submit"> -->
+
+           <input type="submit" value="Validieren">
+        </form>
+
+      
+  <!--  <button onclick="validateFirstName();validateLastName();validateAge();">Validieren</button>  -->
+
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+        <p id="message-3"></p>
+    </div>
+
 </body>
 </html>
