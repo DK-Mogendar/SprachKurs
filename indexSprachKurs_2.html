@@ -10,46 +10,61 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!--Boostrap Icons-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <!--einbindung Javascript und Css Dokument-->
         <script src="/assets/js/sprachKurs_2.js"></script>
-        <script src="/assets/css/sprachKurs.css"></script>
+        <script src="/assets/css/sprachKurs_2.css"></script>
 </head>
-<body>
+<body><!--Titel der Seite-->
     <h1 id="app">Bitte trage deine vollständigen Angaben ein!</h1>
 
     <div class="alert alert-success" role="alert">
            
 
         <form onsubmit="return validateForm();">
+            <!--das label definiert den ausgegebenen Text-->
             <label for="fname">Vorname:</label><br>
-            <input type="text" id="fname" name="fname"><br><br>
+            <!--input definiert das eingabe Feld "type=Typ,IdName,"-->
+            <input type="text" id="fname" name="fname" value=""><br><br>
 
-            <label for="lname">Nachnamename:</label><br>
+            <label for="lname">Nachname:</label><br>
             <input type="text" id="lname" name="lname" value=""><br><br>
 
-            <label for="lname">Strasse:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="strasse">Strasse:</label><br>
+            <input type="text" id="strasse" name="strasse" value=""><br><br>
 
-
-          
+            <label for="ort">Ort:</label><br>
+            <input type="text" id="ort" name="ort" value=""><br><br>
 
             <label for="plz">Postleizahl:</label><br>
             <input type="number" id="plz" name="plz" value=""><br><br>
+
+            <label for="mail">E-Mail:</label><br>
+            <input type="text" id="mail" name="mail" value=""><br><br>
 
             <label for="alter">Alter:</label><br>
             <input type="number" id="alter" name="alter" value=""><br><br>
 
          
-            <!-- <input type="submit" value="Submit"> -->
-
+           <!-- <input type="submit" value="Submit"> -->
            <input type="submit" value="Validieren">
         </form>
 
       
   <!--  <button onclick="validateFirstName();validateLastName();validateAge();">Validieren</button>  -->
-
         <p id="message-1"></p>
         <p id="message-2"></p>
         <p id="message-3"></p>
+        <p id="message-4"></p>
+
+        <p id="message-5"></p>
+        <p id="message-6"></p>
+        <p id="message-7"></p>
+
+    </div>
+    <div>
+        <img src="assets/img/blob-1692452.png" 
+             class= container-sm 
+             alt="meinLogo">
     </div>
 
 </body>
