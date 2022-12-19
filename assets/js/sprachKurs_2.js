@@ -156,3 +156,14 @@ function setMessage6(value) {
 function setMessage7(value) {
     document.getElementById("message-7").innerText = value;
 }
+
+function validateAnswers() {
+   
+    // knock-out pattern: Mit false wird das Formular nicht abgeschickt.
+    // if (!validateRadio()) return false;
+    if (!validateCheckboxes()) return false;
+
+    alert('Danke für Ihre Antwort, alles richtig! '); 
+
+    return true;
+}
