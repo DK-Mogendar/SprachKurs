@@ -45,28 +45,49 @@
                 <label for="alter">Alter:</label><br>
                 <input type="number" id="alter" name="alter" value=""><br><br>
 
-            
-            <!-- <input type="submit" value="Submit"> -->
-            <input type="submit" value="Validieren">
+                <input type="submit" value="Prüfen und abschicken">
             </form>
+   
+            <!--  <button onclick="validateFirstName();validateLastName();validateAge();">Validieren</button>  -->
+                <p id="message-1"></p>
+                <p id="message-2"></p>
+                <p id="message-3"></p>
+                <p id="message-4"></p>
+                <p id="message-5"></p>
+                <p id="message-6"></p>
+                <p id="message-7"></p>
+            <br>
+            <!-- <input type="submit" value="Submit"> -->
+            <form onsubmit="return validateAnswers();">
+                <input type="radio" id="html" name="radio-mood" value="htlm">
+                <label for="html">Html</label><br>
+                <input type="radio" id="css" name="radio-mood" value="css">
+                <label for="css">Css</label><br>
+                <input type="radio" id="js" name="radio-mood" value="js">
+                <label for="js">JavaScript</label>
+                <br>
+                <br><!--Submit Button-->
+                <input type="submit" value="Test">
+                <br>
+            </form>
+            <br>
 
-        
-    <!--  <button onclick="validateFirstName();validateLastName();validateAge();">Validieren</button>  -->
-            <p id="message-1"></p>
-            <p id="message-2"></p>
-            <p id="message-3"></p>
-            <p id="message-4"></p>
-
-            <p id="message-5"></p>
-            <p id="message-6"></p>
-            <p id="message-7"></p>
+                
+     
+  <!--radiobutton-->
+            <p id="message-8"></p>
 
         </div>
+
+
         <div>
             <img src="assets/img/blob-1692452.png" 
                 class= container-sm 
                 alt="meinLogo">
         </div>
+
+    
+
     </div>
 </body>
 </html>
