@@ -1,4 +1,28 @@
 .startSeite {
-    background-image: url("assets/img/original.jpg");
+    background-image: url("../img/cyberwall1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.Map {min-width:100%;
+    height: auto;
+    min-width:100px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius:20% ;
+}
+
+#titel {
+    text-size-adjust: +40px;
+}
+.accordion-item,
+.accordion-button {
+  background-color: rgb(253, 208, 112);
+  border-color: black;
+  background-origin: padding-box;
+}
+.accordion-button:not(.collapsed) {
+    background-color: rgb(247, 134, 6);
+    border-color: black;
+    background-origin: padding-box;
+  }
