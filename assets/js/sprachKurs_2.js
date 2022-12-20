@@ -23,7 +23,8 @@ function validateVorname() {                            //funktion mit der Klass
         setMessage1('Bitte den Vornamen eingeben.');//dann gieb text aus
         return false;                               //es ist falsch
     }
-    else {                                          //oder es ist Richtig
+    else { 
+        setLocalStorage("fname", value);                                         //oder es ist Richtig
         setMessage1(value);                         //dann sende die Nachricht 1.
         return true;                                //es ist Wahr
     }
@@ -37,7 +38,8 @@ function validateNachname() {                           //funktion mit der Klass
         setMessage2('Bitte den Nachnamen eingeben.');   //dann gieb text aus
         return false;                                   //es ist falsch
     }
-    else {                                               //oder es ist Richtig
+    else {   
+        setLocalStorage("lname", value);                                            //oder es ist Richtig
         setMessage2(value);                              //dann sende die Nachricht 2.
         return true;                                     //es ist Wahr
     }
@@ -51,7 +53,8 @@ function validateStrasse() {                            //funktion mit der Klass
         setMessage3('Bitte die Strasse eingeben.');     //dann gieb text aus
         return false;                                   //es ist falsch
     }
-    else {                                               //oder es ist Richtig
+    else { 
+        setLocalStorage("strasse", value);                                              //oder es ist Richtig
         setMessage3(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
@@ -65,7 +68,8 @@ function validateOrt() {                                //funktion mit der Klass
         setMessage4('Bitte die Ortsangabe eingeben.');  //dann gieb text aus
         return false;                                   //es ist falsch
     }
-    else {                                               //oder es ist Richtig
+    else {  
+        setLocalStorage("ort", value);                                             //oder es ist Richtig
         setMessage4(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
@@ -79,7 +83,8 @@ function validatePostleizahl() {                                //funktion mit d
         setMessage5('Bitte die Postleizeahl eingeben.');//dann gieb text aus
         return false;                                   //es ist falsch
     }
-    else {                                               //oder es ist Richtig
+    else {    
+        setLocalStorage("plz", value);                                           //oder es ist Richtig
         setMessage5(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
@@ -102,6 +107,7 @@ function validateMail() {
         return false;
     }
     else {
+        setLocalStorage("mail", value);
         setMessage6(value);
         return true;
     }
@@ -122,7 +128,8 @@ function validateAlter() {                               //funktion mit der Klas
         // wenn kein retur-wert steht, dann giebt die Funktion undefined zurück.
         return false;                                    //es ist falsch
     }
-    else {                                               //oder es ist Richtig
+    else {  
+        setLocalStorage("alter", value);                                             //oder es ist Richtig
         setMessage7(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
@@ -167,7 +174,7 @@ function validateAnswers() {
 
     return true;
 }
-//RadioButtons
+RadioButtons
 function validateRadio() {
     console.log("validateRadio");                                 //funktion mit der Klasse validateRadio defiert:
     //wenn zb.validateHtml nicht vorhanden ist gib zurück falsch++++

@@ -1,0 +1,10 @@
+.schlussSeite {
+    background-image: url("../img/cyberwall1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#daten{
+    background-image: url("../img/cyberwall1.jpg");
+}
+
