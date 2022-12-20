@@ -4,7 +4,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-#daten{
+#daten2{
     background-image: url("../img/cyberwall1.jpg");
 }
 
+#app {
+    background-image: url("../img/cyberwall1.jpg");
+}
+#confirmation-message {
+    background-image: url("../img/cyberwall1.jpg");
+}
