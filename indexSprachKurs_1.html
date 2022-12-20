@@ -20,19 +20,19 @@
 
 <body> 
 <!--navigations Leiste-->
-  <nav class="navbar navbar-expand-lg bg-dark">
+  <nav id="nav" class="navbar navbar-expand-lg ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Produkte</a>
           </li>
           
         </ul>
@@ -42,98 +42,104 @@
   </nav>
 
   <!--übergeortneter Ordner in welchem sich die Einzelnen Sectonen befinden-->
-  <div class="startSeite">
+  <div class="startSeite p-3">
 
     <!--erste Section umfasst Titel G-Maps einbindung und ein Bild-->
-    <div id="titel" class="container-fluid content-padding col-4 my-6 text-warning">   
-      <h1>Sprach Kurs</h1>  
-    </div>
-      <!--erste Section umfasst G-Maps einbindung und ein Bild-->
-      <section id="kurs" class="container-fluid content-padding">         
-          <div class="d-flex container-md col-12">
-            <iframe id="googel" class="Map col-4 image-container mx-auto d-block"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.485533721894!2d8.51202031237121!3d47.363441371048395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790098ca9252865%3A0x7339eea41015370e!2sR%C3%A4ffelstrasse%2012%2C%208045%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1669548033624!5m2!1sde!2sch"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div>
+      <div id="titel" class="alert alert-success container col-7 p-5 text-warning" role="alert">   
+        <h1>Sprach Kurs</h1>  
+      </div>
+        <!--erste Section umfasst G-Maps einbindung und ein Bild-->
+        <section id="kurs" class="container-fluid content-padding">         
+            <div class="d-flex container-md col-12">
+              <iframe id="googel" class="Map col-4 image-container mx-auto d-block"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2702.485533721894!2d8.51202031237121!3d47.363441371048395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4790098ca9252865%3A0x7339eea41015370e!2sR%C3%A4ffelstrasse%2012%2C%208045%20Z%C3%BCrich!5e0!3m2!1sde!2sch!4v1669548033624!5m2!1sde!2sch"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-          <img class=" col-4 image-container" src="assets/img/blob-1692452.png" >
-          
-          <iframe class="Map col-4 image-container mx-auto d-block" src="https://www.google.com/maps/embed?pb=!4v1671444143577!6m8!1m7!1sFokrgffCYFV73EyZgC-gLw!2m2!1d47.36324125641291!2d8.513483546264627!3f124.22943!4f0!5f0.7820865974627469" 
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </section>
+            <img class=" col-4 image-container" src="assets/img/blob-1692452.png" >
+            
+            <iframe class="Map col-4 image-container mx-auto d-block" src="https://www.google.com/maps/embed?pb=!4v1671444143577!6m8!1m7!1sFokrgffCYFV73EyZgC-gLw!2m2!1d47.36324125641291!2d8.513483546264627!3f124.22943!4f0!5f0.7820865974627469" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
 
-      <!--Arcordion teil mit drei Spalten jede über eien Progamm-->
-      <section id="acord" class="container d-flex align-items-center  p-1">
+        <!--Arcordion teil mit drei Spalten jede über eien Progamm-->
+        <section id="acord" class="container d-flex align-items-center  p-1">
 
-        <div class="container p-2 my-5 accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h1 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Html Grund Kurs
-              </button>
-            </h1>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">blabala
+          <div class="container p-2 my-5 accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h1 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Html Grund Kurs
+                </button>
+              </h1>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">blabala
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h1 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Css Grund Kurs
+                </button>
+              </h1>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">balalabaaöl
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h1 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  JavaScript Grund Kurs
+                </button>
+              </h1>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">blablabalablbalbalbalblab
               </div>
             </div>
           </div>
-          <div class="accordion-item">
-            <h1 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Css Grund Kurs
-              </button>
-            </h1>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">balalabaaöl
-              </div>
-            </div>
+        </section>
+      <!--Kleiner Textteil unten-->
+        <section id="Programme" class="container d-flex align-items-center  p-1 text-warning">
+          <div class="container">
+            <h2 class="">Triff deine Wahl</h2>
+            <p>Mögliche Kurse</p>
           </div>
-          <div class="accordion-item">
-            <h1 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                JavaScript Grund Kurs
-              </button>
-            </h1>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-              data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">blablabalablbalbalbalblab
-            </div>
-          </div>
-        </div>
-      </section>
-    <!--Kleiner Textteil unten-->
-      <section id="Programme" class="container d-flex align-items-center  p-1 text-warning">
-        <div class="container-fluid">
-          <h2 class="">Triff deine Wahl</h2>
-          <p>Mögliche Kurse</p>
-        </div>
-    <!--Die radioButtens devinition-->
-    <div class="container-lg col-lg-4 text-warning my-5">
-      <form onsubmit="return validateAnswers();">
-        <input type="radio" id="html" name="radio-mood" value="htlm">
-        <label for="html">Html</label><br>
-        <input type="radio" id="css" name="radio-mood" value="css">
-        <label for="css">Css</label><br>
-        <input type="radio" id="js" name="radio-mood" value="js">
-        <label for="js">JavaScript</label>
-        <br>
-        <br><!--Submit Button-->
-        <input type="submit" value="Prüfen und abschicken">
-      </form>
+      <!--Die radioButtens devinition
+      <div class="container-lg col-lg-4 text-warning my-5">
+        <form onsubmit="return validateAnswers();">
+          <input type="radio" id="html" name="radio-mood" value="htlm">
+          <label for="html">Html</label><br>
+          <input type="radio" id="css" name="radio-mood" value="css">
+          <label for="css">Css</label><br>
+          <input type="radio" id="js" name="radio-mood" value="js">
+          <label for="js">JavaScript</label>
+          <br>
+          <br>
+          <input type="submit" value="Prüfen und abschicken">
+        </form>
+      </div> -->
+    <div class="container-flex col-lg-12 text-warning p-3">  
+         <a class="col-2" href="/indexSprachKurs_2.html" target="_blank"><img src="/assets/img/html5-logo.png"></a>
+          <a href="/indexSprachKurs_2.html" target="_blank"><img src="/assets/img/Css.png"></a>
+          <a href="/indexSprachKurs_2.html" target="_blank"><img src="/assets/img/JS.png"></a>
     </div>
+  </section>
 
-        <div>
-        <img class="image-container container-lg col-lg" src="assets/img/links.png" >
-        </div>
-
-      </section>
-  </div>
+    <footer class="footer">
+      <p class="">Author:Daniel Köstinger</p>
+      <p class=""><a href="#">daniel00007.dks@gmail.com</a></p>
+    </footer>
+</div>
 </body>
 </html>
