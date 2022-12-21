@@ -36,7 +36,14 @@
     background-color: rgb(247, 134, 6);
     border-color: black;
     background-origin: padding-box;
+    width:100;
   }
   .eins {
     background-image: url("../img/html5-logo.png ");
+  }
+  .drei{  background-color: rgb(247, 78, 6);
+    border-color: black;
+    background-origin: padding-box;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius:20% ;
   }
