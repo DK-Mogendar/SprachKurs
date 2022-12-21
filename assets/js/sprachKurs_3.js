@@ -45,3 +45,47 @@ function writeConfirmation(){
     document.getElementById("confirmation-message").innerHTML = confirmation;
 
 }
+
+//-----------------------------------radio Buttons-----------------------------------------------------------------------------------------------------------------
+RadioButtons
+function validateRadio() {
+    console.log("validateRadio");                                 //funktion mit der Klasse validateRadio defiert:
+    //wenn zb.validateHtml nicht vorhanden ist gib zurück falsch++++
+    let radioElementJa = document.getElementById('Ja');      //Das Inputelement=document.mit der element ID = Html
+    let radioElementNein = document.getElementById('Nein');        //Das Inputelement=document.mit der element ID = Css
+    let radioElementNaja = document.getElementById('Naja');  //Das Inputelement=document.mit der element ID = JavaScript
+
+
+    
+
+
+    if (!(radioElementJa.checked||radioElementNein.checked||radioElementNaja.checked)) { //ist kein radioElementHtml (ect.) vorhanden dann:
+        // Fehlerfall
+        setMessage8('Bitte wähle eine Antwort aus');         // Giebt eine Nachricht aus Text ...
+        return false;                                                                // ist falsch
+
+    }
+    else {                                                                           //oder
+        // Erfolgsfall
+        let radioButtons = document.getElementsByName("radio-mood");
+        let value;
+
+        for (let b = 0; b < radioButtons.length; ++b) {  //Wenn b gleich Null; b kleiner als anzahl in der Legende(im array) dann gieb mehr aus
+            let button = radioButtons[b];               //Der Butten entspricht dem radioButton mit devinition [b]
+
+            if (button.checked) {                       //ist der Butten geprüft
+                value = button.value;
+                break;                                  //mach einen Umbruch
+            }
+        }
+        setMessage8('Du hast "' + value + '" gewählt'); //sede die nachricht Text+value+Text
+        return true;                                    // mandatory, zwingend sonst wird Formular nicht abgeschickt.
+    }
+}
+
+function setMessage8(value) {
+    document.getElementById("message-8").innerText = value;
+}
+
+
+
