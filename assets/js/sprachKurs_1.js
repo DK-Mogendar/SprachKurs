@@ -37,3 +37,4 @@ function validateRadio() {
 function setMessage8(value) {
     document.getElementById("message-8").innerText = value;
 }
+
