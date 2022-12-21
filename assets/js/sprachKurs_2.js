@@ -167,7 +167,7 @@ function setMessage7(value) {
 function validateAnswers() {
 
     // knock-out pattern: Mit false wird das Formular nicht abgeschickt.
-    if (!validateRadio()) return false;
+   // if (!validateRadio()) return false;
     //if (!validateCheckboxes()) return false;
 
     alert('Danke für Ihre Antwort, alles richtig! ');
