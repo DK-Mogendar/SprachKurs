@@ -47,7 +47,7 @@ function writeConfirmation(){
 }
 
 //-----------------------------------radio Buttons-----------------------------------------------------------------------------------------------------------------
-RadioButtons
+
 function validateRadio() {
     console.log("validateRadio");                                 //funktion mit der Klasse validateRadio defiert:
     //wenn zb.validateHtml nicht vorhanden ist gib zurück falsch++++
@@ -59,7 +59,7 @@ function validateRadio() {
     
 
 
-    if (!(radioElementJa.checked||radioElementNein.checked||radioElementNaja.checked)) { //ist kein radioElementHtml (ect.) vorhanden dann:
+    if (!radioElementJa.checked&&!radioElementNein.checked&&!radioElementNaja.checked) { //ist kein radioElementHtml (ect.) vorhanden dann:
         // Fehlerfall
         setMessage8('Bitte wähle eine Antwort aus');         // Giebt eine Nachricht aus Text ...
         return false;                                                                // ist falsch
@@ -70,14 +70,15 @@ function validateRadio() {
         let radioButtons = document.getElementsByName("radio-mood");
         let value;
 
-        for (let b = 0; b < radioButtons.length; ++b) {  //Wenn b gleich Null; b kleiner als anzahl in der Legende(im array) dann gieb mehr aus
-            let button = radioButtons[b];               //Der Butten entspricht dem radioButton mit devinition [b]
+        for (let i = 0; i < radioButtons.length; ++i) {  //Wenn b gleich Null; b kleiner als anzahl in der Legende(im array) dann gieb mehr aus
+            let button = radioButtons[i];               //Der Butten entspricht dem radioButton mit devinition [b]
 
             if (button.checked) {                       //ist der Butten geprüft
                 value = button.value;
                 break;                                  //mach einen Umbruch
             }
         }
+        localStorage.setItem("Naja", value);
         setMessage8('Du hast "' + value + '" gewählt'); //sede die nachricht Text+value+Text
         return true;                                    // mandatory, zwingend sonst wird Formular nicht abgeschickt.
     }
