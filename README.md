@@ -28,4 +28,4 @@ Ausserdem habe ich am ende Radiobuttons mit einer Umfrage gestalted. Es geht dar
 Danke Seite für zusäzliche Angaben
 Ein keines Dankeschön für die zusätzlichen Daten.
 
-22.12.22 15:15Uhr Ende des Projekts
+22.12.22 15:15 Uhr Ende des Projekts
