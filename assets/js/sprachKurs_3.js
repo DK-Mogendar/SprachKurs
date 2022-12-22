@@ -84,7 +84,7 @@ function validateRadio() {
     }
 }
 
-function setMessage8(value) {
+function setMessage8(value) {  // giebt die Nachricht aus
     document.getElementById("message-8").innerText = value;
 }
 
