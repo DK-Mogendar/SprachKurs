@@ -2,31 +2,31 @@
 function validateForm() { //funktion mit der Klasse validateFrom defiert:
     //wenn zb.validateVorname nicht vorhanden ist gib zurück falsch
     //Sagt:
-    if (!validateVorname()) return false;     //wenn kein valideVorname dan gieb zurück Falsch
-    if (!validateNachname()) return false;    // ""
-    if (!validateStrasse()) return false;     // ""
-    if (!validateOrt()) return false;         // ""
-    if (!validatePostleizahl()) return false; // ""
-    if (!validateMail()) return false;        // ""
-    if (!validateAlter()) return false;
-    if (!validateRadio()) return false;        // ""
-    alert('allses OK');                      //alert stopt saget wenn alles bis zu diesem Punkt OK ist
-    return true;                             //es ist Wahr
+    if (!validateVorname()) return false;                //wenn kein valideVorname dan gieb zurück Falsch
+    if (!validateNachname()) return false;               // ""
+    if (!validateStrasse()) return false;                // ""
+    if (!validateOrt()) return false;                    // ""
+    if (!validatePostleizahl()) return false;            // ""
+    if (!validateMail()) return false;                   // ""
+    if (!validateAlter()) return false;                  // ""
+    if (!validateRadio()) return false;                  // ""
+    alert('allses OK');                                  //alert stopt saget wenn alles bis zu diesem Punkt OK ist
+    return true;                                         //es ist Wahr
 }
 
-function validateVorname() {                            //funktion mit der Klasse validateVormane defiert:
-    let inputElement = document.getElementById("fname");//Das Inputelement=document.mit der element ID = fname
-    let value = inputElement.value;                     //Das value = dem Inputelement namens value
+function validateVorname() {                             //funktion mit der Klasse validateVormane defiert:
+    let inputElement = document.getElementById("fname"); //Das Inputelement=document.mit der element ID = fname
+    let value = inputElement.value;                      //Das value = dem Inputelement namens value
 
-    if (!value) {                                   //wenn kein value
+    if (!value) {                                        //wenn kein value
         // Beispiel: '', null, undefined
-        setMessage1('Bitte den Vornamen eingeben.');//dann gieb text aus
-        return false;                               //es ist falsch
+        setMessage1('Bitte den Vornamen eingeben.');     //dann gieb text aus
+        return false;                                    //es ist falsch
     }
     else { 
-        setLocalStorage("fname", value);                                         //oder es ist Richtig
-        setMessage1(value);                         //dann sende die Nachricht 1.
-        return true;                                //es ist Wahr
+        setLocalStorage("fname", value);                 //oder es ist Richtig
+        setMessage1(value);                              //dann sende die Nachricht 1.
+        return true;                                     //es ist Wahr
     }
 }
 
@@ -39,7 +39,7 @@ function validateNachname() {                           //funktion mit der Klass
         return false;                                   //es ist falsch
     }
     else {   
-        setLocalStorage("lname", value);                                            //oder es ist Richtig
+        setLocalStorage("lname", value);                 //oder es ist Richtig
         setMessage2(value);                              //dann sende die Nachricht 2.
         return true;                                     //es ist Wahr
     }
@@ -54,7 +54,7 @@ function validateStrasse() {                            //funktion mit der Klass
         return false;                                   //es ist falsch
     }
     else { 
-        setLocalStorage("strasse", value);                                              //oder es ist Richtig
+        setLocalStorage("strasse", value);               //oder es ist Richtig
         setMessage3(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
@@ -69,13 +69,13 @@ function validateOrt() {                                //funktion mit der Klass
         return false;                                   //es ist falsch
     }
     else {  
-        setLocalStorage("ort", value);                                             //oder es ist Richtig
+        setLocalStorage("ort", value);                   //oder es ist Richtig
         setMessage4(value);                              //dann sende die Nachricht 3.
         return true;                                     //es ist Wahr
     }
 }
 
-function validatePostleizahl() {                                //funktion mit der Klasse validateOrtdefiert:
+function validatePostleizahl() {                        //funktion mit der Klasse validateOrtdefiert:
     let inputElement = document.getElementById("plz");  //Das Inputelement=document.mit der element ID = plz
     let value = inputElement.value;                     //Das value = dem Inputelement namens value
     if (!value) {                                       //wenn kein value

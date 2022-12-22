@@ -12,18 +12,18 @@ function getLocalStorage(key) {
 function writeConfirmation(){
 
 
-        // Die Personalien werden in Variablen ausgelesen.
+// Die Personalien werden in Variablen ausgelesen.
     let Naja = getLocalStorage("Naja");
    
-        /*
-            Die Beschriftungen und Platzhalter für die obigen Variablen werden in ein 
-            String Template eingetragen. Zur Gliederung und Gestaltung werden zudem 
-            <p> und <span> Elemente verwendet.
-        */
+/*
+   Die Beschriftungen und Platzhalter für die obigen Variablen werden in ein 
+   String Template eingetragen. Zur Gliederung und Gestaltung werden zudem 
+   <p> und <span> Elemente verwendet.
+ */
     let confirmation = 
         `<p><span class="confirmation.label">Danke für deine Antwort:</span> ${Naja}</p>`;      
           
-    // Die Bestätingung wird als innertHTML gesetzt
+// Die Bestätingung wird als innertHTML gesetzt
 
     document.getElementById("confirmation-message").innerHTML = confirmation;
 
