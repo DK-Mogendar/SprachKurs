@@ -13,8 +13,6 @@ function writeConfirmation(){
 
 
         // Die Personalien werden in Variablen ausgelesen.
-    let Ja = getLocalStorage("Ja");
-    let Nein = getLocalStorage("Nein");
     let Naja = getLocalStorage("Naja");
    
         /*
@@ -23,9 +21,7 @@ function writeConfirmation(){
             <p> und <span> Elemente verwendet.
         */
     let confirmation = 
-        `<p><span class="confirmation.label">Vornane:</span> ${Ja}</p>
-        <p><span class="confirmation.label">Nachname:</span> ${Nein}</p>
-        <p><span class="confirmation.label">Alter:</span> ${Naja}</p>`;      
+        `<p><span class="confirmation.label">Danke für deine Antwort:</span> ${Naja}</p>`;      
           
     // Die Bestätingung wird als innertHTML gesetzt
 
