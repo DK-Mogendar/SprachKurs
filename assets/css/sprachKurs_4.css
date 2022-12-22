@@ -1,7 +1,30 @@
 body{
     background-image: url("../img/cyberwall1.jpg");
     background-position: center;
-    background-repeat: repeat;
+    background-repeat:repeat;
     background-size: cover;
 }
 
+.schluss{
+    background-image: url("../img/csm_programming_f73a9fb7f4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+.feuer{
+    height: auto;
+    min-width:100px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius:20% ;
+}
+.rund{
+    border-top-left-radius: 20%;
+    border-bottom-right-radius:20% ;
+}
+.drei{  
+    background-color: rgb(253, 208, 112);
+    border-color:white;
+    background-origin: padding-box;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius:20% ;
+}
